@@ -1,0 +1,17 @@
+services:
+  server:
+    build: ./server
+    ports:
+      - "3000:3000"
+    volumes:
+      # Persist the JSON "database" across container restarts
+      - ./server/data:/app/data
+
+  client:
+    build: ./client
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_PROXY=http://server:3000
+    depends_on:
+      - server
