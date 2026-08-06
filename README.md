@@ -34,7 +34,6 @@ AI tools are allowed.
 - [ ] Albums come from the API; CRUD persists across restarts
 - [ ] Search/filter/sort works
 - [ ] Your feature works and `NOTES.md` explains it
-- [ ] TypeScript compiles: `npm run build` (client), `npm run typecheck` (server)
 
 ## Submitting
 
