@@ -22,4 +22,10 @@ export default defineConfig({
       },
     },
   },
+  // `vite preview` (used in Docker) serves the built app on the same port,
+  // inheriting the /api proxy above
+  preview: {
+    host: true,
+    port: 5173,
+  },
 })
