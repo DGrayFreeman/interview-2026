@@ -7,7 +7,7 @@ const app = new Hono()
 
 app.use(logger())
 
-app.get("/api/health", (c) => c.json({ ok: true, service: "spindle-server" }))
+app.get("/api/health", (c) => c.json({ ok: true, service: "record-shop-server" }))
 
 app.get("/api/albums", async (c) => {
   const albums = await readAlbums()
@@ -30,5 +30,5 @@ app.get("/api/albums/:id", async (c) => {
 
 const port = Number(process.env.PORT ?? 3000)
 serve({ fetch: app.fetch, port, hostname: "0.0.0.0" }, () => {
-  console.log(`spindle-server listening on http://localhost:${port}`)
+  console.log(`record-shop-server listening on http://localhost:${port}`)
 })

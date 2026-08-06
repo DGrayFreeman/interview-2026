@@ -1,5 +1,5 @@
 {
-  "name": "spindle-server",
+  "name": "record-shop-server",
   "private": true,
   "type": "module",
   "scripts": {

@@ -3,35 +3,36 @@ import { Disc3 } from "lucide-react"
 import { AlbumCard } from "@/components/album-card"
 import type { Album } from "@/types"
 
-// One hard-coded album so you can see what a card looks like.
-// Your first task: replace this with real data from GET /api/albums.
-const PLACEHOLDER_ALBUM: Album = {
-  id: "alb_000",
-  title: "Replace Me",
-  artist: "Fetched From Nowhere",
-  year: 2024,
-  genre: "Placeholder",
-  price: 0.99,
-  stock: 1,
+// Hard-coded sample so you can see what a card looks like. It's the first
+// record in server/data/albums.json — task 1 is to render the whole
+// collection from GET /api/albums instead.
+const SAMPLE_ALBUM: Album = {
+  id: "alb_001",
+  title: "Kind of Blue",
+  artist: "Miles Davis",
+  year: 1959,
+  genre: "Jazz",
+  price: 29.99,
+  stock: 7,
 }
 
 function App() {
   return (
     <div className="min-h-screen">
       <header className="border-b">
-        <div className="container flex h-16 items-center gap-3">
+        <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-6">
           <Disc3 className="h-6 w-6" />
-          <h1 className="text-lg font-semibold tracking-tight">Spindle Records</h1>
+          <h1 className="text-lg font-semibold tracking-tight">Record Shop</h1>
         </div>
       </header>
 
-      <main className="container py-8">
+      <main className="mx-auto max-w-6xl px-6 py-10">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <AlbumCard album={PLACEHOLDER_ALBUM} />
+          <AlbumCard album={SAMPLE_ALBUM} />
         </div>
       </main>
 
-      <footer className="container py-8">
+      <footer className="mx-auto max-w-6xl px-6 py-10">
         <ApiStatus />
       </footer>
     </div>
