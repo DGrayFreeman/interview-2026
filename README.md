@@ -1,7 +1,7 @@
 # Record Shop — Take-Home
 
-React 19 + Vite + Tailwind 4 client, Hono (TypeScript) server, and a JSON file
-(`server/data/albums.json`) as the database.
+React 19 + Vite + Tailwind 4 client, Hono (TypeScript) server, JSON file
+database (`server/data/albums.json`).
 
 ## Run
 
@@ -24,7 +24,9 @@ album card.
    persist to the JSON file, validate input
 3. At least one search / filter / sort
 4. One feature of your choice, described in a short `NOTES.md` (what, why,
-   tradeoffs, and how you used AI tools — they're allowed)
+   tradeoffs, AI tool usage)
+
+AI tools are allowed.
 
 ## Acceptance criteria
 
@@ -36,5 +38,6 @@ album card.
 
 ## Submitting
 
-Timebox: ~4–8 hours. Don't fork or open PRs here — send a private repo invite
-or a zip (no `node_modules/`), git history intact.
+Due 48 hours after you receive this. Send a private repo invite or a zip (no
+`node_modules/`), including your git history. Do not fork or open PRs on this
+repo.
