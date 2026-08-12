@@ -1,4 +1,10 @@
-# Record Shop — Take-Home
+# Record Shop — Take-Home Interview
+
+This is a minimal web app starter that calls the server, and displays one album card. Your task is to create a more robust "online record catalog" where I can browse and manage albums.
+
+The only dependency for your device required to run this is Docker. If you don't already have docker installed, you can do so here:
+https://docs.docker.com/desktop/setup/install/mac-install/
+https://docs.docker.com/desktop/setup/install/windows-install/
 
 React 19 + Vite + Tailwind 4 client, Hono (TypeScript) server, JSON file
 database (`server/data/albums.json`).
