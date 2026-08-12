@@ -17,13 +17,13 @@ proxies `/api/*` to the server).
 ## Task
 
 The starter serves `GET /api/albums` (+ `/:id`) and renders one hard-coded
-album card.
+album card. You should iterate on this, building a web app that does the following:
 
 1. Render the album collection from the API, with loading and error states
 2. CRUD: create, edit, and delete albums from the UI — write the API routes,
    persist to the JSON file, validate input
 3. At least one search / filter / sort
-4. One feature of your choice, described in a short `NOTES.md` (what, why,
+4. One creative feature of your choice, described in a short `NOTES.md` (what, why,
    tradeoffs, AI tool usage)
 
 AI tools are allowed.
@@ -37,6 +37,5 @@ AI tools are allowed.
 
 ## Submitting
 
-Due 48 hours after you receive this. Send a private repo invite or a zip (no
-`node_modules/`), including your git history. Do not fork or open PRs on this
+Due 48 hours after you receive this. Email the submission containing your forked repository url to `reid@r2rmovers.com`. Do not fork or open PRs on this
 repo.
