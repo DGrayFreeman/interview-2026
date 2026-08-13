@@ -4,8 +4,8 @@ export interface Album {
   artist: string
   year: number
   genre: string
-  /** USD */
   price: number
-  /** copies in stock */
   stock: number
 }
+
+export type AlbumFormData = Omit<Album, "id">
