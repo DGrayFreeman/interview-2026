@@ -4,15 +4,8 @@ export interface Album {
   artist: string
   year: number
   genre: string
-  /** USD */
   price: number
-  /** copies in stock */
   stock: number
 }
 
-export type AlbumInput = Omit<Album, "id">
-
-export interface ValidationResult {
-  valid: boolean
-  errors: string[]
-}
+export type AlbumFormData = Omit<Album, "id">
